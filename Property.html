@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property</title>
+    <link rel="stylesheet" href="./Propertystyle_hidden.css">
+</head>
+
+<body>
+
+    <div id="formFields">
+        <input type="text" id="number" placeholder="Property Number">
+        <input type="text" id="number2" placeholder="Second Property Number">
+        <label><input type="checkbox" id="pluralAd"> Plural Ad (Selling 2 houses)</label>
+
+        <div class="row">
+            <label><input type="radio" name="propertyType" value="house"> House</label>
+            <label><input type="radio" name="propertyType" value="apartment"> Apartment</label>
+            <label><input type="radio" name="propertyType" value="mansion"> Mansion</label>
+            <label><input type="radio" name="propertyType" value="Casino penthouse"> Casino Penthouse</label>
+        </div>
+
+        <div class="row features">
+            <label><input type="checkbox" id="garden"> Garden</label>
+            <label><input type="checkbox" class="gs" id="garage2" value="2 g.s."> 2 g.s</label>
+            <label><input type="checkbox" class="gs" id="garage5" value="5 g.s."> 5 g.s</label>
+            <label><input type="checkbox" class="gs" id="garage9" value="9 g.s."> 9 g.s</label>
+            <label><input type="checkbox" class="gs" id="garage25" value="25 g.s."> 25 g.s</label>
+            <label><input type="checkbox" class="wh" id="wh3" value="3 w.h."> 3 w.h</label>
+            <label><input type="checkbox" class="wh" id="wh4" value="4 w.h."> 4 w.h</label>
+            <label><input type="checkbox" class="wh" id="wh5" value="5 w.h."> 5 w.h</label>
+            <label><input type="checkbox" id="customInterior"> Custom Interior</label>
+            <label><input type="checkbox" id="insurance"> Insurance</label>
+            <label><input type="checkbox" id="helipad"> Helipad</label>
+            <label><input type="checkbox" id="tennis"> Tennis Court</label>
+            <label><input type="checkbox" id="driveway"> Long Driveway</label>
+            <label><input type="checkbox" id="pool"> Swimming Pool</label>
+        </div>
+
+        <div class="row">
+            <select id="viewOptionSelect">
+      <option value="">Views</option>
+      <optgroup label="1">
+        <option value="a great view">a Great View</option>
+        <option value="great view">Great View</option>
+      </optgroup>
+      <optgroup label="2">
+        <option value="a good view">a Good View</option>
+        <option value="good view">Good View</option>
+      </optgroup>
+      <optgroup label="3">
+        <option value="a nice view">a Nice View</option>
+        <option value="nice view">Nice View</option>
+      </optgroup>
+      <optgroup label="4">
+        <option value="a beautiful view">a Beautiful View</option>
+        <option value="beautiful view">Beautiful View</option>
+      </optgroup>
+    </select>
+        </div>
+
+        <label>In:
+    <select id="inLocation">
+      <option value="">Select IN Location (optional)</option>
+      <option>Auto Salon</option>
+      <option>Bahama Mamas</option>
+      <option>Banham Canyon</option>
+      <option>Business Center</option>
+      <option>Capitol</option>
+      <option>(the) Casino</option>
+      <option>Cayo Perico Island</option>
+      <option>Chumash</option>
+      <option>(the) Church</option>
+      <option>Del Perro</option>
+      <option>Diamond Bar</option>
+      <option>Downtown Vinewood</option>
+      <option>(in) Eclipse Tower</option>
+      <option>El Burro Heights</option>
+      <option>Fight Club</option>
+      <option>Hospital/Sandy Hospital</option>
+      <option>LifeInvader</option>
+      <option>Little Seoul</option>
+      <option>Mirror Park</option>
+      <option>Residential complex</option>
+      <option>(in) Richards Majestic</option>
+      <option>Richman</option>
+      <option>Rockford Hills</option>
+      <option>Pacific Bluffs Country Club</option>
+      <option>Paleto Bay</option>
+      <option>Pillbox Hill</option>
+      <option>Postal</option>
+      <option>Rancho</option>
+      <option>Sandy Shores</option>
+      <option>Tequi-La-La bar</option>
+      <option>Vanilla Unicorn Bar</option>
+      <option>Vespucci Canals</option>
+      <option>Vinewood Hills</option>
+      <option>West Vinewood</option>
+      <option>ghetto</option>
+      <option>beach</option>
+      <option>beach market</option>
+      <option>stadium</option>
+      <option>fire station</option>
+      <option>train station</option>
+      <option>post office</option>
+      <option>airport</option>
+      <option>mall</option>
+      <option>city</option>
+    </select>
+  </label>
+
+        <label>Near:
+    <select id="nearLocation">
+      <option value="">Select NEAR Location (optional)</option>
+      <option>Auto Salon</option>
+      <option>Bahama Mamas</option>
+      <option>Banham Canyon</option>
+      <option>Business Center</option>
+      <option>Capitol</option>
+      <option>(the) Casino</option>
+      <option>Cayo Perico Island</option>
+      <option>Chumash</option>
+      <option>(the) Church</option>
+      <option>Del Perro</option>
+      <option>Diamond Bar</option>
+      <option>Downtown Vinewood</option>
+      <option>(in) Eclipse Tower</option>
+      <option>El Burro Heights</option>
+      <option>Fight Club</option>
+      <option>Hospital/Sandy Hospital</option>
+      <option>LifeInvader</option>
+      <option>Little Seoul</option>
+      <option>Mirror Park</option>
+      <option>Residential complex</option>
+      <option>(in) Richards Majestic</option>
+      <option>Richman</option>
+      <option>Rockford Hills</option>
+      <option>Pacific Bluffs Country Club</option>
+      <option>Paleto Bay</option>
+      <option>Pillbox Hill</option>
+      <option>Postal</option>
+      <option>Rancho</option>
+      <option>Sandy Shores</option>
+      <option>Tequi-La-La bar</option>
+      <option>Vanilla Unicorn Bar</option>
+      <option>Vespucci Canals</option>
+      <option>Vinewood Hills</option>
+      <option>West Vinewood</option>
+      <option>ghetto</option>
+      <option>beach</option>
+      <option>beach market</option>
+      <option>stadium</option>
+      <option>fire station</option>
+      <option>train station</option>
+      <option>post office</option>
+      <option>airport</option>
+      <option>mall</option>
+      <option>city</option>
+    </select>
+  </label>
+
+        <input type="text" id="price" placeholder="Price | Budget">
+        <input type="text" id="days" placeholder="Days For Renting">
+
+        <div class="row">
+            <label><input type="radio" name="action" value="Buying"> Buying</label>
+            <label><input type="radio" name="action" value="Selling"> Selling</label>
+            <label><input type="radio" name="action" value="Renting out"> Renting out</label>
+            <label><input type="radio" name="action" value="Looking to rent"> Looking to rent</label>
+            <label><input type="checkbox" id="perWeek"> Per Week For Renting</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <button onclick="clearAll()">Clear All</button>
+    </div>
+
+    <div class="outputContainer">
+        <div class="output" id="output">Your formatted AD will appear here.</div>
+        <button class="copyBtn" onclick="copyAd()">Copy</button>
+    </div>
+
+    <script src="property-script.js"></script>
+</body>
+
+</html>

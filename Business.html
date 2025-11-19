@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Business AD Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="./Businessstyle-hidden.css">
+</head>
+
+<body>
+
+    <h2>Business</h2>
+
+    <!-- First Row: Business Name, Number, Location -->
+    <div class="row">
+        <select id="businessName">
+    <option value="">Select a Business</option>
+    <optgroup label="*">
+      <option value="24/7 Store">24/7 Store</option>
+    </optgroup>
+    <optgroup label="A">
+      <option value="Ammunition Store">Ammunition Store</option>
+      <option value="ATM">ATM</option>
+    </optgroup>
+    <optgroup label="B">
+      <option value="Bar">Bar</option>
+      <option value="Burger Shop">Burger Shop</option>
+    </optgroup>
+    <optgroup label="C">
+      <option value="Chip Tuning">Chip Tuning</option>
+      <option value="Car Wash">Car Wash</option>
+      <option value="Car Sharing">Car Sharing</option>
+      <option value="Clothing Shop">Clothing Shop</option>
+      <option value="Cowshed">Cowshed</option>
+    </optgroup>
+    <optgroup label="E">
+      <option value="Electric Charging Station">Electric Charging Station</option>
+    </optgroup>
+    <optgroup label="F">
+      <option value="Farm">Farm</option>
+      <option value="a family">Family</option>
+      <option value="Fight Club">Fight Club</option>
+      <option value="Freight Train">Freight Train</option>
+    </optgroup>
+    <optgroup label="G">
+      <option value="Gas Station">Gas Station</option>
+      <option value="Grand Elite Clothing Shop">Grand Elite Clothing Shop</option>
+    </optgroup>
+    <optgroup label="H">
+      <option value="Hair Salon">Hair Salon</option>
+    </optgroup>
+    <optgroup label="J">
+      <option value="Jewellery Store">Jewellery Store</option>
+      <option value="Juice Shop">Juice Shop</option>
+    </optgroup>
+    <optgroup label="O">
+      <option value="Oil Well">Oil Well</option>
+    </optgroup>
+    <optgroup label="P">
+      <option value="a private">Private</option>
+      <option value="Parking">Parking</option>
+      <option value="Pet Shop">Pet Shop</option>
+      <option value="Plantation">Plantation</option>
+    </optgroup>
+    <optgroup label="S">
+      <option value="Service Station">Service Station</option>
+      <option value="State Object">State Object</option>
+    </optgroup>
+    <optgroup label="T">
+      <option value="Tattoo Studio">Tattoo Studio</option>
+      <option value="Taxi Company">Taxi Company</option>
+    </optgroup>
+    <optgroup label="W">
+      <option value="Warehouse">Warehouse</option>
+    </optgroup>  
+  </select>
+
+        <input type="text" id="businessNumber" placeholder="Business Number">
+
+        <select id="location" class="choices">
+    <option value="">Select a Location</option>
+    <option>Auto Salon</option>
+    <option>Bahama Mamas</option>
+    <option>Banham Canyon</option>
+    <option>Business Center</option>
+    <option>Capitol</option>
+    <option>(the) Casino</option>
+    <option>Cayo Perico Island</option>
+    <option>Chumash</option>
+    <option>(the) Church</option>
+    <option>Del Perro</option>
+    <option>Diamond Bar</option>
+    <option>Downtown Vinewood</option>
+    <option>(in) Eclipse Tower</option>
+    <option>El Burro Heights</option>
+    <option>Fight Club</option>
+    <option>Hospital/Sandy Hospital</option>
+    <option>LifeInvader</option>
+    <option>Little Seoul</option>
+    <option>Mirror Park</option>
+    <option>Residential complex</option>
+    <option>(in) Richards Majestic</option>
+    <option>Richman</option>
+    <option>Rockford Hills</option>
+    <option>Pacific Bluffs Country Club</option>
+    <option>Paleto Bay</option>
+    <option>Pillbox Hill</option>
+    <option>Postal</option>
+    <option>Rancho</option>
+    <option>Sandy Shores</option>
+    <option>Tequi-La-La bar</option>
+    <option>Vanilla Unicorn Bar</option>
+    <option>Vespucci Canals</option>
+    <option>Vinewood Hills</option>
+    <option>West Vinewood</option>
+    <option>ghetto</option>
+    <option>beach</option>
+    <option>beach market</option>
+    <option>stadium</option>
+    <option>fire station</option>
+    <option>train station</option>
+    <option>post office</option>
+    <option>airport</option>
+    <option>mall</option>
+    <option>city</option>
+  </select>
+    </div>
+
+    <!-- Second Row: Price -->
+    <div class="row">
+        <input type="text" id="price" placeholder="Price | Budget">
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="row">
+        <label><input type="checkbox" name="action" value="Buying"> Buying</label>
+        <label><input type="checkbox" name="action" value="Selling" checked> Selling</label>
+    </div>
+
+    <!-- Plantation Options -->
+    <div id="plantationOptions">
+        <div class="row">
+            <label><input type="checkbox" name="plantationSize" value="10-Bed"> 10-Bed</label>
+            <label><input type="checkbox" name="plantationSize" value="15-Bed"> 15-Bed</label>
+            <label><input type="checkbox" name="plantationSize" value="20-Bed"> 20-Bed</label>
+        </div>
+        <div class="row">
+            <select id="plantationType" class="choices">
+      <option value="">Select Seed Type</option>
+      <option value="Cabbage">Cabbage</option>
+      <option value="Pineapple">Pineapple</option>
+      <option value="Pumpkin">Pumpkin</option>
+      <option value="Mandarin">Mandarin</option>
+    </select>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button class="copy-btn" onclick="copyAd()">Copy AD</button>
+        <button class="copy-btn" onclick="clearAll()">Clear All</button>
+    </div>
+
+    <!-- Output -->
+    <div class="output" id="output">Your AD will appear here.</div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="Business-script.js"></script>
+</body>
+
+</html>

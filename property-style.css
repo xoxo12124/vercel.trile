@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    background: #111;
+    color: #eee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 900px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.row.features {
+    margin-top: 20px;
+}
+
+.row label {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+select,
+input[type=text],
+button {
+    padding: 10px;
+    margin: 5px;
+    width: 100%;
+    max-width: 150px;
+    border-radius: 6px;
+    border: none;
+    background: #222;
+    color: #eee;
+}
+
+.outputContainer {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.output {
+    white-space: nowrap;
+    word-break: keep-all;
+    flex: 1;
+    font-size: 1rem;
+}
+
+.copyBtn {
+    background: #444;
+    border: none;
+    color: #eee;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 0.9rem;
+}
+
+.copyBtn:hover {
+    background: #666;
+}
+
+button {
+    cursor: pointer;
+    margin: 8px;
+}
+
+/* Add to your CSS */
+
+.card,
+iframe {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}

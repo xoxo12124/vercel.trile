@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Work AD Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="./Workstyle_hidden.css">
+</head>
+
+<body>
+
+    <h2>Work</h2>
+
+    <!-- First Row: Work Name, Work Number -->
+    <div class="row">
+        <select id="workName">
+    <option value="">Select a Work</option>
+
+    <optgroup label="L">
+      <option value="Locksmith">Locksmith</option>
+      <option value="Lawyer">Lawyer</option>
+    </optgroup>
+
+    <optgroup label="E">
+      <option value="Electrician">Electrician</option>
+    </optgroup>
+
+    <optgroup label="L">
+      <option value="Land Worker">Land Worker</option>
+    </optgroup>
+
+    <optgroup label="S">
+      <option value="Surveyor">Surveyor</option>
+      <option value="Solar Panel">Solar Panel</option>
+    </optgroup>
+
+    <optgroup label="C">
+      <option value="Construction Site">Construction Site</option>
+    </optgroup>
+
+    <optgroup label="D">
+      <option value="Driver">Driver</option>
+      <option value="DJ">DJ</option>
+    </optgroup>
+
+    <optgroup label="T">
+      <option value="Trucker">Trucker</option>
+    </optgroup>
+
+    <optgroup label="P">
+      <option value="Photographer">Photographer</option>
+      <option value="Professional Dancer">Professional Dancer</option>
+      <option value="Pilot">Pilot</option>
+      <option value="Personal Assistant">Personal Assistant</option>
+    </optgroup>
+
+    <optgroup label="C">
+      <option value="Cameraman">Cameraman</option>
+      <option value="Collector">Collector</option>
+    </optgroup>
+
+    <optgroup label="B">
+      <option value="Bodyguard">Bodyguard</option>
+    </optgroup>
+
+    <optgroup label="O">
+      <option value="Oil Man">Oil Man</option>
+    </optgroup>
+
+    <optgroup label="G">
+      <option value="Gardener">Gardener</option>
+    </optgroup>
+
+    <optgroup label="F">
+      <option value="Firefighter">Firefighter</option>
+    </optgroup>
+
+    <optgroup label="S">
+      <option value="Singer">Singer</option>
+    </optgroup>
+  </select>
+
+        <input type="text" id="workNumber" placeholder="Work Number">
+    </div>
+
+    <!-- Second Row: Experience, Price -->
+    <div class="row">
+        <input type="text" id="experience" placeholder="Years of Experience">
+        <input type="text" id="price" placeholder="Salary | Budget">
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="row">
+        <label><input type="checkbox" name="action" value="Looking for a job"> Looking for a job</label>
+        <label><input type="checkbox" name="action" value="Hiring" checked> Hiring</label>
+    </div>
+
+    <!-- Time Unit Options -->
+    <div id="timeUnitOptions">
+        <div class="row">
+            <label><input type="checkbox" name="timeUnit" value="per hour"> Per Hour</label>
+            <label><input type="checkbox" name="timeUnit" value="per day"> Per Day</label>
+            <label><input type="checkbox" name="timeUnit" value="per week"> Per Week</label>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button class="copy-btn" onclick="copyAd()">Copy AD</button>
+        <button class="copy-btn" onclick="clearAll()">Clear All</button>
+    </div>
+
+    <!-- Output -->
+    <div class="output" id="output">Your AD will appear here.</div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="Work-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LifeInvader Vehicle(Final)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="./vehiclestyle-hidden.css">
+</head>
+
+<body>
+    <h2>Vehicle</h2>
+
+    <div class="row">
+        <select id="vehicleDropdown">
+      <option value="">Select a Vehicle</option>
+      <optgroup label="A">
+        <option value="Adder">Adder</option>
+        <option value="Albany Escalade">Albany Escalade</option>
+        <option value="Alpha">Alpha</option>
+        <option value="Annis 350Z">Annis 350Z</option>
+        <option value="Annis GT-R I">Annis GT-R I</option>
+        <option value="Annis RX-7 (FD)">Annis RX-7 (FD)</option>
+        <option value="Annis RX-8">Annis RX-8</option>
+        <option value="Annis Silvia (S15)">Annis Silvia (S15)</option>
+        <option value="Annis Skyline GT-R (R34)">Annis Skyline GT-R (R34)</option>
+        <option value="Annis WRX 2004">Annis WRX 2004</option>
+        <option value="Annis ZR-350">Annis ZR-350</option>
+        <option value="Apocalypse Impaler">Apocalypse Impaler</option>
+        <option value="Apocalypse Imperator">Apocalypse Imperator</option>
+        <option value="Apocalypse Issi">Apocalypse Issi</option>
+        <option value="Apocalypse Slamvan">Apocalypse Slamvan</option>
+        <option value="Ardent">Ardent</option>
+        <option value="Asbo">Asbo</option>
+        <option value="Asea">Asea</option>
+        <option value="Asterope">Asterope</option>
+        <option value="Autarch">Autarch</option>
+        <option value="Annis RX-7 (VF)">Annis RX-7 (VF)</option>
+      </optgroup>
+
+      <!-- All other vehicle optgroups remain the same -->
+      <optgroup label="B">
+        <option value="Baller">Baller</option>
+        <option value="Baller LE LWB">Baller LE LWB</option>
+        <option value="Baller SG">Baller SG</option>
+        <option value="Banshee">Banshee</option>
+        <option value="Banshee 900R">Banshee 900R</option>
+        <option value="Beater Emperor">Beater Emperor</option>
+        <option value="Beater Mariachi Tornado">Beater Mariachi Tornado</option>
+        <option value="Beater Surfer">Beater Surfer</option>
+        <option value="Beater Tornado">Beater Tornado</option>
+        <option value="Benefactor 600SEL (W140)">Benefactor 600SEL (W140)</option>
+        <option value="Benefactor C63 Coupe (W205)">Benefactor C63 Coupe (W205)</option>
+        <option value="Benefactor E420 (W210)">Benefactor E420 (W210)</option>
+        <option value="Benefactor G63 (G770)">Benefactor G63 (G770)</option>
+        <option value="Benefactor GT Black Series">Benefactor GT Black Series</option>
+        <option value="Benefactor GT-63 (S)">Benefactor GT-63 (S)</option>
+        <option value="Benefactor S63 (W222)">Benefactor S63 (W222)</option>
+        <option value="Benefactor Vito (V447)">Benefactor Vito (V447)</option>
+        <option value="Benefactor-AMG C63 (W205)">Benefactor-AMG C63 (W205)</option>
+        <option value="Benefactor-AMG GT">Benefactor-AMG GT</option>
+        <option value="Benefactor-AMG GT 63 (S)">Benefactor-AMG GT 63 (S)</option>
+        <option value="Benefactor-AMG SL65 (R230)">Benefactor-AMG SL65 (R230)</option>
+        <option value="Benefactor-Maybach Pullman">Benefactor-Maybach Pullman</option>
+        <option value="Benefactor-MG VT">Benefactor-MG VT</option>
+        <option value="Bestia GTS">Bestia GTS</option>
+        <option value="Bison">Bison</option>
+        <option value="Blade">Blade</option>
+        <option value="Blista">Blista</option>
+        <option value="Blista Kanjo">Blista Kanjo</option>
+        <option value="Bodhi">Bodhi</option>
+        <option value="Bravado Charger 1969">Bravado Charger 1969</option>
+        <option value="Bravado Charger SRT">Bravado Charger SRT</option>
+        <option value="Bravado Ram 1500">Bravado Ram 1500</option>
+        <option value="Bravado Viper 2008">Bravado Viper 2008</option>
+        <option value="Brawler">Brawler</option>
+        <option value="Brioso R/A">Brioso R/A</option>
+        <option value="Buccaneer">Buccaneer</option>
+        <option value="Buffalo">Buffalo</option>
+        <option value="Bullet">Bullet</option>
+        <option value="Burgerfahrzeug Golf GTI Vision">Burgerfahrzeug Golf GTI Vision</option>
+        <option value="Burgerfahrzeug Tiguan">Burgerfahrzeug Tiguan</option>
+      </optgroup>
+
+      <optgroup label="C">
+        <option value="Calico GTF">Calico GTF</option>
+        <option value="Caracara 4x4">Caracara 4x4</option>
+        <option value="Carbonizzare">Carbonizzare</option>
+        <option value="Casco">Casco</option>
+        <option value="Cavalcade">Cavalcade</option>
+        <option value="Cheburek">Cheburek</option>
+        <option value="Cheetah">Cheetah</option>
+        <option value="Cheetah Classic">Cheetah Classic</option>
+        <option value="Chino">Chino</option>
+        <option value="Clique">Clique</option>
+        <option value="Cognoscenti">Cognoscenti</option>
+        <option value="Cognoscenti 55">Cognoscenti 55</option>
+        <option value="Cognoscenti Cabrio">Cognoscenti Cabrio</option>
+        <option value="Coil Cybertruck">Coil Cybertruck</option>
+        <option value="Coil H9">Coil H9</option>
+        <option value="Coil Model S">Coil Model S</option>
+        <option value="Coil Model X">Coil Model X</option>
+        <option value="Coil Roadster">Coil Roadster</option>
+        <option value="Comet">Comet</option>
+        <option value="Comet S2">Comet S2</option>
+        <option value="Comet SR">Comet SR</option>
+        <option value="Contender">Contender</option>
+        <option value="Coquette">Coquette</option>
+        <option value="Coquette Blackfin">Coquette Blackfin</option>
+        <option value="Coquette Classic">Coquette Classic</option>
+        <option value="Coquette D10">Coquette D10</option>
+        <option value="Cyclone">Cyclone</option>
+        <option value="Cypher">Cypher</option>
+      </optgroup>
+
+      <optgroup label="D">
+        <option value="Declasse Camaro 2020">Declasse Camaro 2020</option>
+        <option value="Declasse Corvette C7">Declasse Corvette C7</option>
+        <option value="Declasse Tahoe">Declasse Tahoe</option>
+        <option value="Deveste Eight">Deveste Eight</option>
+        <option value="Deviant">Deviant</option>
+        <option value="Dilettante">Dilettante</option>
+        <option value="Dinka NSX 2017">Dinka NSX 2017</option>
+        <option value="Dinka RT-3000">Dinka RT-3000</option>
+        <option value="Dominator">Dominator</option>
+        <option value="Dominator ASP">Dominator ASP</option>
+        <option value="Dominator GTT">Dominator GTT</option>
+        <option value="Dominator GTX">Dominator GTX</option>
+        <option value="Dominator PiBwasser">Dominator PiBwasser</option>
+        <option value="Drift Yosemite">Drift Yosemite</option>
+        <option value="Dubsta">Dubsta</option>
+        <option value="Dubsta 6x6">Dubsta 6x6</option>
+        <option value="Dubsta SG">Dubsta SG</option>
+        <option value="Dukes">Dukes</option>
+      </optgroup>
+
+      <optgroup label="E">
+        <option value="Elegy Retro Custom">Elegy Retro Custom</option>
+        <option value="Elegy RH8">Elegy RH8</option>
+        <option value="Ellie">Ellie</option>
+        <option value="Emperor">Emperor</option>
+        <option value="Emperor LX-570">Emperor LX-570</option>
+        <option value="Emperor RCF">Emperor RCF</option>
+        <option value="Entity XF">Entity XF</option>
+        <option value="Enus Bentayga">Enus Bentayga</option>
+        <option value="Enus Continental GT">Enus Continental GT</option>
+        <option value="Enus Cullinan">Enus Cullinan</option>
+        <option value="Enus Phantom">Enus Phantom</option>
+        <option value="ETR-1">ETR-1</option>
+        <option value="Euros">Euros</option>
+        <option value="Exemplar">Exemplar</option>
+        <option value="Enus Spectre">Enus Spectre</option>
+      </optgroup>
+
+      <optgroup label="F">
+        <option value="F620">F620</option>
+        <option value="Faction">Faction</option>
+        <option value="Felon">Felon</option>
+        <option value="Felon GT">Felon GT</option>
+        <option value="Feltzer">Feltzer</option>
+        <option value="Flash GT">Flash GT</option>
+        <option value="FMJ">FMJ</option>
+        <option value="FQ 2">FQ 2</option>
+        <option value="Fugitive">Fugitive</option>
+        <option value="Furore GT">Furore GT</option>
+        <option value="Fusilade">Fusilade</option>
+        <option value="Futo">Futo</option>
+        <option value="Futo GTX">Futo GTX</option>
+        <option value="Future Shock Issi">Future Shock Issi</option>
+      </optgroup>
+
+      <optgroup label="G">
+        <option value="Gallivanter Defender">Gallivanter Defender</option>
+        <option value="Gallivanter Velar">Gallivanter Velar</option>
+        <option value="Gauntlet">Gauntlet</option>
+        <option value="Gauntlet Classic">Gauntlet Classic</option>
+        <option value="Gauntlet Hellfire">Gauntlet Hellfire</option>
+        <option value="Gauntlet Redwood">Gauntlet Redwood</option>
+        <option value="GB200">GB200</option>
+        <option value="Glendale">Glendale</option>
+        <option value="GP-1">GP-1</option>
+        <option value="Granger">Granger</option>
+        <option value="Grotti Italia (F458)">Grotti Italia (F458)</option>
+        <option value="Grotti Purosangue">Grotti Purosangue</option>
+        <option value="Growler">Growler</option>
+        <option value="GT 500">GT 500</option>
+      </optgroup>
+
+      <optgroup label="H">
+        <option value="Hermes">Hermes</option>
+        <option value="Hotknife">Hotknife</option>
+        <option value="Huntley S">Huntley S</option>
+      </optgroup>
+
+      <optgroup label="I">
+        <option value="Imorgon">Imorgon</option>
+        <option value="Impaler">Impaler</option>
+        <option value="Infernus">Infernus</option>
+        <option value="Infernus Classic">Infernus Classic</option>
+        <option value="Ingot">Ingot</option>
+        <option value="Issi">Issi</option>
+        <option value="Itali GTB">Itali GTB</option>
+        <option value="Itali GTB Custom">Itali GTB Custom</option>
+        <option value="Itali GTO">Itali GTO</option>
+      </optgroup>
+
+      <optgroup label="J">
+        <option value="Jackal">Jackal</option>
+        <option value="JB 700">JB 700</option>
+        <option value="Jester">Jester</option>
+        <option value="Jester (Racecar)">Jester (Racecar)</option>
+        <option value="Jester Classic">Jester Classic</option>
+        <option value="Jester RR">Jester RR</option>
+        <option value="Journey">Journey</option>
+        <option value="Jugular">Jugular</option>
+      </optgroup>
+
+      <optgroup label="K">
+        <option value="Kamacho">Kamacho</option>
+        <option value="Karin Land Cruiser 200">Karin Land Cruiser 200</option>
+        <option value="Karin Mark 2">Karin Mark 2</option>
+        <option value="Karin Rav4 2021">Karin Rav4 2021</option>
+        <option value="Karin Supra A80">Karin Supra A80</option>
+        <option value="Karin Tundra 2021">Karin Tundra 2021</option>
+        <option value="Khamelion">Khamelion</option>
+        <option value="Komoda">Komoda</option>
+        <option value="Krieger">Krieger</option>
+        <option value="Kuruma">Kuruma</option>
+      </optgroup>
+
+      <optgroup label="L">
+        <option value="Lampadati Guilia GTA">Lampadati Guilia GTA</option>
+        <option value="Landstalker">Landstalker</option>
+        <option value="Lynx">Lynx</option>
+      </optgroup>
+
+      <optgroup label="M">
+        <option value="Mamba">Mamba</option>
+        <option value="Massacro">Massacro</option>
+        <option value="Monroe">Monroe</option>
+        <option value="Moonbeam">Moonbeam</option>
+      </optgroup>
+
+      <optgroup label="N">
+        <option value="Nebula Turbo">Nebula Turbo</option>
+        <option value="Neon">Neon</option>
+        <option value="Nero">Nero</option>
+        <option value="Nero Custom">Nero Custom</option>
+        <option value="Nightshade">Nightshade</option>
+        <option value="Novak">Novak</option>
+      </optgroup>
+
+      <optgroup label="O">
+        <option value="Obey A6">Obey A6</option>
+        <option value="Obey A8">Obey A8</option>
+        <option value="Obey Q60">Obey Q60</option>
+        <option value="Obey Q8">Obey Q8</option>
+        <option value="Obey R8">Obey R8</option>
+        <option value="Obey RS6">Obey RS6</option>
+        <option value="Obey RS7">Obey RS7</option>
+        <option value="Obey S8 (D4)">Obey S8 (D4)</option>
+        <option value="Ocelot DBS GT Zagato">Ocelot DBS GT Zagato</option>
+        <option value="Ocelot Eletre">Ocelot Eletre</option>
+        <option value="Ocelot F-Type R">Ocelot F-Type R</option>
+        <option value="Ocelot V12 Speedster">Ocelot V12 Speedster</option>
+        <option value="Ocelot Vanquish Zagato SB">Ocelot Vanquish Zagato SB</option>
+        <option value="Ocelot Victor">Ocelot Victor</option>
+        <option value="Ocelot XE SV Project 8">Ocelot XE SV Project 8</option>
+        <option value="Octavia RS">Octavia RS</option>
+        <option value="Oracle">Oracle</option>
+        <option value="Osiris">Osiris</option>
+      </optgroup>
+
+      <optgroup label="P">
+        <option value="Panto">Panto</option>
+        <option value="Paragon R">Paragon R</option>
+        <option value="Pariah">Pariah</option>
+        <option value="Patriot">Patriot</option>
+        <option value="Patriot Stretch">Patriot Stretch</option>
+        <option value="Pegassi Huayra BC">Pegassi Huayra BC</option>
+        <option value="Pegassi Performante (LP640)">Pegassi Performante (LP640)</option>
+        <option value="Penetrator">Penetrator</option>
+        <option value="Penumbra">Penumbra</option>
+        <option value="Pfister 911">Pfister 911</option>
+        <option value="Pfister 918 Spyder">Pfister 918 Spyder</option>
+        <option value="Pfister Panamera">Pfister Panamera</option>
+        <option value="Pfister Taycan">Pfister Taycan</option>
+        <option value="Pheonix">Pheonix</option>
+        <option value="Picador">Picador</option>
+        <option value="Prairie">Prairie</option>
+        <option value="Premier">Premier</option>
+        <option value="Previon">Previon</option>
+        <option value="Progen P1">Progen P1</option>
+        <option value="Pfister 811">Pfister 811</option>
+      </optgroup>
+
+      <optgroup label="R">
+        <option value="Raiden">Raiden</option>
+        <option value="Rancher XL">Rancher XL</option>
+        <option value="Rapid GT">Rapid GT</option>
+        <option value="Raptor">Raptor</option>
+        <option value="Rat-Loader">Rat-Loader</option>
+        <option value="Rat-Truck">Rat-Truck</option>
+        <option value="RE-7B">RE-7B</option>
+        <option value="Reaper">Reaper</option>
+        <option value="Rebel">Rebel</option>
+        <option value="Rebla GTS">Rebla GTS</option>
+        <option value="Regina">Regina</option>
+        <option value="Remus">Remus</option>
+        <option value="Revolter">Revolter</option>
+        <option value="Rhapsody">Rhapsody</option>
+        <option value="Riata">Riata</option>
+        <option value="Rocoto">Rocoto</option>
+        <option value="Ruiner">Ruiner</option>
+        <option value="Rumpo">Rumpo</option>
+        <option value="Ruston">Ruston</option>
+        <option value="Rusty Rebel">Rusty Rebel</option>
+      </optgroup>
+
+      <optgroup label="S">
+        <option value="Sabre Turbo">Sabre Turbo</option>
+        <option value="Sandking SWB">Sandking SWB</option>
+        <option value="Sandking XL">Sandking XL</option>
+        <option value="SC-1">SC-1</option>
+        <option value="Schafter">Schafter</option>
+        <option value="Schafter LWB">Schafter LWB</option>
+        <option value="Schafter LWB (Armored)">Schafter LWB (Armored)</option>
+        <option value="Schafter V12">Schafter V12</option>
+        <option value="Schlagen GT">Schlagen GT</option>
+        <option value="Schwarzer">Schwarzer</option>
+        <option value="Seminole">Seminole</option>
+        <option value="Sentinel Classic">Sentinel Classic</option>
+        <option value="Sentinel XS">Sentinel XS</option>
+        <option value="Serrano">Serrano</option>
+        <option value="Seven-70">Seven-70</option>
+        <option value="Shelby GT500">Shelby GT500</option>
+        <option value="Slamvan">Slamvan</option>
+        <option value="Slamvan Custom">Slamvan Custom</option>
+        <option value="Specter">Specter</option>
+        <option value="Stafford">Stafford</option>
+        <option value="StafVapid">StafVapid</option>
+        <option value="Stalion">Stalion</option>
+        <option value="Stinger">Stinger</option>
+        <option value="Stinger GT">Stinger GT</option>
+        <option value="Stirling GT">Stirling GT</option>
+        <option value="Streiter">Streiter</option>
+        <option value="Stretch">Stretch</option>
+        <option value="Sultan">Sultan</option>
+        <option value="Sultan Classic">Sultan Classic</option>
+        <option value="Sultan RS">Sultan RS</option>
+        <option value="Sultan RS Classic">Sultan RS Classic</option>
+        <option value="Super Diamond">Super Diamond</option>
+        <option value="Surano">Surano</option>
+        <option value="Surge">Surge</option>
+        <option value="Swinger">Swinger</option>
+      </optgroup>
+
+      <optgroup label="T">
+        <option value="T-20">T-20</option>
+        <option value="Tailgater">Tailgater</option>
+        <option value="Tailgater S">Tailgater S</option>
+        <option value="Taipan">Taipan</option>
+        <option value="Tampa">Tampa</option>
+        <option value="Tempesta">Tempesta</option>
+        <option value="Tezeract">Tezeract</option>
+        <option value="Thrax">Thrax</option>
+        <option value="Tigon">Tigon</option>
+        <option value="Torero">Torero</option>
+        <option value="Toros">Toros</option>
+        <option value="Tropos Rallye">Tropos Rallye</option>
+        <option value="Truffade Chiron">Truffade Chiron</option>
+        <option value="Tulip">Tulip</option>
+        <option value="Turismo Classic">Turismo Classic</option>
+        <option value="Turismo R">Turismo R</option>
+        <option value="Tyrant">Tyrant</option>
+        <option value="Tyrus">Tyrus</option>
+      </optgroup>
+
+      <optgroup label="U">
+        <option value="Ubermacht 760 (LI)">Ubermacht 760 (LI)</option>
+        <option value="Ubermacht I8">Ubermacht I8</option>
+        <option value="Ubermacht M3 (E46)">Ubermacht M3 (E46)</option>
+        <option value="Ubermacht M3 (G80)">Ubermacht M3 (G80)</option>
+        <option value="Ubermacht M3 CS">Ubermacht M3 CS</option>
+        <option value="Ubermacht M4 (G82)">Ubermacht M4 (G82)</option>
+        <option value="Ubermacht M4 (GTS)">Ubermacht M4 (GTS)</option>
+        <option value="Ubermacht M5 (CS)">Ubermacht M5 (CS)</option>
+        <option value="Ubermacht M5 (E34)">Ubermacht M5 (E34)</option>
+        <option value="Ubermacht M5 (E60)">Ubermacht M5 (E60)</option>
+        <option value="Ubermacht M5 (F90)">Ubermacht M5 (F90)</option>
+        <option value="Ubermacht M8 (F91)">Ubermacht M8 (F91)</option>
+        <option value="Ubermacht X5 (E70)">Ubermacht X5 (E70)</option>
+        <option value="Ubermacht X5 (G05)">Ubermacht X5 (G05)</option>
+        <option value="Ubermacht X5-M (F95)">Ubermacht X5-M (F95)</option>
+        <option value="Ubermacht X6-M (E71)">Ubermacht X6-M (E71)</option>
+        <option value="Ubermacht X6-M 2021">Ubermacht X6-M 2021</option>
+        <option value="Ubermacht X7 (G07)">Ubermacht X7 (G07)</option>
+      </optgroup>
+
+      <optgroup label="V">
+        <option value="V-STR">V-STR</option>
+        <option value="Vacca">Vacca</option>
+        <option value="Vagner">Vagner</option>
+        <option value="Vamos">Vamos</option>
+        <option value="Vapid Mustang GT500">Vapid Mustang GT500</option>
+        <option value="Vapid Raptor (F150)">Vapid Raptor (F150)</option>
+        <option value="Vectre">Vectre</option>
+        <option value="Velierer">Velierer</option>
+        <option value="Vigero">Vigero</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Virgo Classic">Virgo Classic</option>
+        <option value="Visione">Visione</option>
+        <option value="Voltic">Voltic</option>
+        <option value="Voodoo">Voodoo</option>
+        <option value="Voodoo Custom">Voodoo Custom</option>
+      </optgroup>
+
+      <optgroup label="W">
+        <option value="Warrener">Warrener</option>
+        <option value="Warrener HKR">Warrener HKR</option>
+        <option value="Washington">Washington</option>
+        <option value="Windsor">Windsor</option>
+        <option value="Windsor Drop">Windsor Drop</option>
+      </optgroup>
+
+
+      <optgroup label="X">
+        <option value="X80 Proto">X80 Proto</option>
+        <option value="XA-21">XA-21</option>
+        <option value="XLS">XLS</option>
+        <option value="XLS (Armored)">XLS (Armored)</option>
+      </optgroup>
+
+
+      <optgroup label="Y">
+        <option value="Yosemite">Yosemite</option>
+        <option value="Yosemite Rancher">Yosemite Rancher</option>
+      </optgroup>
+
+
+
+
+
+
+      <optgroup label="Z">
+        <option value="Z-Type">Z-Type</option>
+        <option value="Zentorno">Zentorno</option>
+        <option value="Zion">Zion</option>
+        <option value="Zion Cabrio">Zion Cabrio</option>
+        <option value="Zion Classic">Zion Classic</option>
+        <option value="Zorrusso">Zorrusso</option>
+      </optgroup>
+
+      <optgroup label="*">
+        <option value="9F">9F</option>
+        <option value="9F Cabrio">9F Cabrio</option>
+      </optgroup>
+    </select>
+
+
+        <select id="vehicleName2">
+      <option value="">Second Vehicle For Trading Only</option>
+      <optgroup label="A">
+        <option value="Adder">Adder</option>
+        <option value="Albany Escalade">Albany Escalade</option>
+        <option value="Alpha">Alpha</option>
+        <option value="Annis 350Z">Annis 350Z</option>
+        <option value="Annis GT-R I">Annis GT-R I</option>
+        <option value="Annis RX-7 (FD)">Annis RX-7 (FD)</option>
+        <option value="Annis RX-8">Annis RX-8</option>
+        <option value="Annis Silvia (S15)">Annis Silvia (S15)</option>
+        <option value="Annis Skyline GT-R (R34)">Annis Skyline GT-R (R34)</option>
+        <option value="Annis WRX 2004">Annis WRX 2004</option>
+        <option value="Annis ZR-350">Annis ZR-350</option>
+        <option value="Apocalypse Impaler">Apocalypse Impaler</option>
+        <option value="Apocalypse Imperator">Apocalypse Imperator</option>
+        <option value="Apocalypse Issi">Apocalypse Issi</option>
+        <option value="Apocalypse Slamvan">Apocalypse Slamvan</option>
+        <option value="Ardent">Ardent</option>
+        <option value="Asbo">Asbo</option>
+        <option value="Asea">Asea</option>
+        <option value="Asterope">Asterope</option>
+        <option value="Autarch">Autarch</option>
+        <option value="Annis RX-7 (VF)">Annis RX-7 (VF)</option>
+      </optgroup>
+
+      <optgroup label="B">
+        <option value="Baller">Baller</option>
+        <option value="Baller LE LWB">Baller LE LWB</option>
+        <option value="Baller SG">Baller SG</option>
+        <option value="Banshee">Banshee</option>
+        <option value="Banshee 900R">Banshee 900R</option>
+        <option value="Beater Emperor">Beater Emperor</option>
+        <option value="Beater Mariachi Tornado">Beater Mariachi Tornado</option>
+        <option value="Beater Surfer">Beater Surfer</option>
+        <option value="Beater Tornado">Beater Tornado</option>
+        <option value="Benefactor 600SEL (W140)">Benefactor 600SEL (W140)</option>
+        <option value="Benefactor C63 Coupe (W205)">Benefactor C63 Coupe (W205)</option>
+        <option value="Benefactor E420 (W210)">Benefactor E420 (W210)</option>
+        <option value="Benefactor G63 (G770)">Benefactor G63 (G770)</option>
+        <option value="Benefactor GT Black Series">Benefactor GT Black Series</option>
+        <option value="Benefactor GT-63 (S)">Benefactor GT-63 (S)</option>
+        <option value="Benefactor S63 (W222)">Benefactor S63 (W222)</option>
+        <option value="Benefactor Vito (V447)">Benefactor Vito (V447)</option>
+        <option value="Benefactor-AMG C63 (W205)">Benefactor-AMG C63 (W205)</option>
+        <option value="Benefactor-AMG GT">Benefactor-AMG GT</option>
+        <option value="Benefactor-AMG GT 63 (S)">Benefactor-AMG GT 63 (S)</option>
+        <option value="Benefactor-AMG SL65 (R230)">Benefactor-AMG SL65 (R230)</option>
+        <option value="Benefactor-Maybach Pullman">Benefactor-Maybach Pullman</option>
+        <option value="Benefactor-MG VT">Benefactor-MG VT</option>
+        <option value="Bestia GTS">Bestia GTS</option>
+        <option value="Bison">Bison</option>
+        <option value="Blade">Blade</option>
+        <option value="Blista">Blista</option>
+        <option value="Blista Kanjo">Blista Kanjo</option>
+        <option value="Bodhi">Bodhi</option>
+        <option value="Bravado Charger 1969">Bravado Charger 1969</option>
+        <option value="Bravado Charger SRT">Bravado Charger SRT</option>
+        <option value="Bravado Ram 1500">Bravado Ram 1500</option>
+        <option value="Bravado Viper 2008">Bravado Viper 2008</option>
+        <option value="Brawler">Brawler</option>
+        <option value="Brioso R/A">Brioso R/A</option>
+        <option value="Buccaneer">Buccaneer</option>
+        <option value="Buffalo">Buffalo</option>
+        <option value="Bullet">Bullet</option>
+        <option value="Burgerfahrzeug Golf GTI Vision">Burgerfahrzeug Golf GTI Vision</option>
+        <option value="Burgerfahrzeug Tiguan">Burgerfahrzeug Tiguan</option>
+      </optgroup>
+
+      <optgroup label="C">
+        <option value="Calico GTF">Calico GTF</option>
+        <option value="Caracara 4x4">Caracara 4x4</option>
+        <option value="Carbonizzare">Carbonizzare</option>
+        <option value="Casco">Casco</option>
+        <option value="Cavalcade">Cavalcade</option>
+        <option value="Cheburek">Cheburek</option>
+        <option value="Cheetah">Cheetah</option>
+        <option value="Cheetah Classic">Cheetah Classic</option>
+        <option value="Chino">Chino</option>
+        <option value="Clique">Clique</option>
+        <option value="Cognoscenti">Cognoscenti</option>
+        <option value="Cognoscenti 55">Cognoscenti 55</option>
+        <option value="Cognoscenti Cabrio">Cognoscenti Cabrio</option>
+        <option value="Coil Cybertruck">Coil Cybertruck</option>
+        <option value="Coil H9">Coil H9</option>
+        <option value="Coil Model S">Coil Model S</option>
+        <option value="Coil Model X">Coil Model X</option>
+        <option value="Coil Roadster">Coil Roadster</option>
+        <option value="Comet">Comet</option>
+        <option value="Comet S2">Comet S2</option>
+        <option value="Comet SR">Comet SR</option>
+        <option value="Contender">Contender</option>
+        <option value="Coquette">Coquette</option>
+        <option value="Coquette Blackfin">Coquette Blackfin</option>
+        <option value="Coquette Classic">Coquette Classic</option>
+        <option value="Coquette D10">Coquette D10</option>
+        <option value="Cyclone">Cyclone</option>
+        <option value="Cypher">Cypher</option>
+      </optgroup>
+
+      <optgroup label="D">
+        <option value="Declasse Camaro 2020">Declasse Camaro 2020</option>
+        <option value="Declasse Corvette C7">Declasse Corvette C7</option>
+        <option value="Declasse Tahoe">Declasse Tahoe</option>
+        <option value="Deveste Eight">Deveste Eight</option>
+        <option value="Deviant">Deviant</option>
+        <option value="Dilettante">Dilettante</option>
+        <option value="Dinka NSX 2017">Dinka NSX 2017</option>
+        <option value="Dinka RT-3000">Dinka RT-3000</option>
+        <option value="Dominator">Dominator</option>
+        <option value="Dominator ASP">Dominator ASP</option>
+        <option value="Dominator GTT">Dominator GTT</option>
+        <option value="Dominator GTX">Dominator GTX</option>
+        <option value="Dominator PiBwasser">Dominator PiBwasser</option>
+        <option value="Drift Yosemite">Drift Yosemite</option>
+        <option value="Dubsta">Dubsta</option>
+        <option value="Dubsta 6x6">Dubsta 6x6</option>
+        <option value="Dubsta SG">Dubsta SG</option>
+        <option value="Dukes">Dukes</option>
+      </optgroup>
+
+      <optgroup label="E">
+        <option value="Elegy Retro Custom">Elegy Retro Custom</option>
+        <option value="Elegy RH8">Elegy RH8</option>
+        <option value="Ellie">Ellie</option>
+        <option value="Emperor">Emperor</option>
+        <option value="Emperor LX-570">Emperor LX-570</option>
+        <option value="Emperor RCF">Emperor RCF</option>
+        <option value="Entity XF">Entity XF</option>
+        <option value="Enus Bentayga">Enus Bentayga</option>
+        <option value="Enus Continental GT">Enus Continental GT</option>
+        <option value="Enus Cullinan">Enus Cullinan</option>
+        <option value="Enus Phantom">Enus Phantom</option>
+        <option value="ETR-1">ETR-1</option>
+        <option value="Euros">Euros</option>
+        <option value="Exemplar">Exemplar</option>
+        <option value="Enus Spectre">Enus Spectre</option>
+      </optgroup>
+
+      <optgroup label="F">
+        <option value="F620">F620</option>
+        <option value="Faction">Faction</option>
+        <option value="Felon">Felon</option>
+        <option value="Felon GT">Felon GT</option>
+        <option value="Feltzer">Feltzer</option>
+        <option value="Flash GT">Flash GT</option>
+        <option value="FMJ">FMJ</option>
+        <option value="FQ 2">FQ 2</option>
+        <option value="Fugitive">Fugitive</option>
+        <option value="Furore GT">Furore GT</option>
+        <option value="Fusilade">Fusilade</option>
+        <option value="Futo">Futo</option>
+        <option value="Futo GTX">Futo GTX</option>
+        <option value="Future Shock Issi">Future Shock Issi</option>
+      </optgroup>
+
+      <optgroup label="G">
+        <option value="Gallivanter Defender">Gallivanter Defender</option>
+        <option value="Gallivanter Velar">Gallivanter Velar</option>
+        <option value="Gauntlet">Gauntlet</option>
+        <option value="Gauntlet Classic">Gauntlet Classic</option>
+        <option value="Gauntlet Hellfire">Gauntlet Hellfire</option>
+        <option value="Gauntlet Redwood">Gauntlet Redwood</option>
+        <option value="GB200">GB200</option>
+        <option value="Glendale">Glendale</option>
+        <option value="GP-1">GP-1</option>
+        <option value="Granger">Granger</option>
+        <option value="Grotti Italia (F458)">Grotti Italia (F458)</option>
+        <option value="Grotti Purosangue">Grotti Purosangue</option>
+        <option value="Growler">Growler</option>
+        <option value="GT 500">GT 500</option>
+      </optgroup>
+
+      <optgroup label="H">
+        <option value="Hermes">Hermes</option>
+        <option value="Hotknife">Hotknife</option>
+        <option value="Huntley S">Huntley S</option>
+      </optgroup>
+
+      <optgroup label="I">
+        <option value="Imorgon">Imorgon</option>
+        <option value="Impaler">Impaler</option>
+        <option value="Infernus">Infernus</option>
+        <option value="Infernus Classic">Infernus Classic</option>
+        <option value="Ingot">Ingot</option>
+        <option value="Issi">Issi</option>
+        <option value="Itali GTB">Itali GTB</option>
+        <option value="Itali GTB Custom">Itali GTB Custom</option>
+        <option value="Itali GTO">Itali GTO</option>
+      </optgroup>
+
+      <optgroup label="J">
+        <option value="Jackal">Jackal</option>
+        <option value="JB 700">JB 700</option>
+        <option value="Jester">Jester</option>
+        <option value="Jester (Racecar)">Jester (Racecar)</option>
+        <option value="Jester Classic">Jester Classic</option>
+        <option value="Jester RR">Jester RR</option>
+        <option value="Journey">Journey</option>
+        <option value="Jugular">Jugular</option>
+      </optgroup>
+
+      <optgroup label="K">
+        <option value="Kamacho">Kamacho</option>
+        <option value="Karin Land Cruiser 200">Karin Land Cruiser 200</option>
+        <option value="Karin Mark 2">Karin Mark 2</option>
+        <option value="Karin Rav4 2021">Karin Rav4 2021</option>
+        <option value="Karin Supra A80">Karin Supra A80</option>
+        <option value="Karin Tundra 2021">Karin Tundra 2021</option>
+        <option value="Khamelion">Khamelion</option>
+        <option value="Komoda">Komoda</option>
+        <option value="Krieger">Krieger</option>
+        <option value="Kuruma">Kuruma</option>
+      </optgroup>
+
+      <optgroup label="L">
+        <option value="Lampadati Guilia GTA">Lampadati Guilia GTA</option>
+        <option value="Landstalker">Landstalker</option>
+        <option value="Lynx">Lynx</option>
+      </optgroup>
+
+      <optgroup label="M">
+        <option value="Mamba">Mamba</option>
+        <option value="Massacro">Massacro</option>
+        <option value="Monroe">Monroe</option>
+        <option value="Moonbeam">Moonbeam</option>
+      </optgroup>
+
+      <optgroup label="N">
+        <option value="Nebula Turbo">Nebula Turbo</option>
+        <option value="Neon">Neon</option>
+        <option value="Nero">Nero</option>
+        <option value="Nero Custom">Nero Custom</option>
+        <option value="Nightshade">Nightshade</option>
+        <option value="Novak">Novak</option>
+      </optgroup>
+
+      <optgroup label="O">
+        <option value="Obey A6">Obey A6</option>
+        <option value="Obey A8">Obey A8</option>
+        <option value="Obey Q60">Obey Q60</option>
+        <option value="Obey Q8">Obey Q8</option>
+        <option value="Obey R8">Obey R8</option>
+        <option value="Obey RS6">Obey RS6</option>
+        <option value="Obey RS7">Obey RS7</option>
+        <option value="Obey S8 (D4)">Obey S8 (D4)</option>
+        <option value="Ocelot DBS GT Zagato">Ocelot DBS GT Zagato</option>
+        <option value="Ocelot Eletre">Ocelot Eletre</option>
+        <option value="Ocelot F-Type R">Ocelot F-Type R</option>
+        <option value="Ocelot V12 Speedster">Ocelot V12 Speedster</option>
+        <option value="Ocelot Vanquish Zagato SB">Ocelot Vanquish Zagato SB</option>
+        <option value="Ocelot Victor">Ocelot Victor</option>
+        <option value="Ocelot XE SV Project 8">Ocelot XE SV Project 8</option>
+        <option value="Octavia RS">Octavia RS</option>
+        <option value="Oracle">Oracle</option>
+        <option value="Osiris">Osiris</option>
+      </optgroup>
+
+      <optgroup label="P">
+        <option value="Panto">Panto</option>
+        <option value="Paragon R">Paragon R</option>
+        <option value="Pariah">Pariah</option>
+        <option value="Patriot">Patriot</option>
+        <option value="Patriot Stretch">Patriot Stretch</option>
+        <option value="Pegassi Huayra BC">Pegassi Huayra BC</option>
+        <option value="Pegassi Performante (LP640)">Pegassi Performante (LP640)</option>
+        <option value="Penetrator">Penetrator</option>
+        <option value="Penumbra">Penumbra</option>
+        <option value="Pfister 911">Pfister 911</option>
+        <option value="Pfister 918 Spyder">Pfister 918 Spyder</option>
+        <option value="Pfister Panamera">Pfister Panamera</option>
+        <option value="Pfister Taycan">Pfister Taycan</option>
+        <option value="Pheonix">Pheonix</option>
+        <option value="Picador">Picador</option>
+        <option value="Prairie">Prairie</option>
+        <option value="Premier">Premier</option>
+        <option value="Previon">Previon</option>
+        <option value="Progen P1">Progen P1</option>
+        <option value="Pfister 811">Pfister 811</option>
+      </optgroup>
+
+      <optgroup label="R">
+        <option value="Raiden">Raiden</option>
+        <option value="Rancher XL">Rancher XL</option>
+        <option value="Rapid GT">Rapid GT</option>
+        <option value="Raptor">Raptor</option>
+        <option value="Rat-Loader">Rat-Loader</option>
+        <option value="Rat-Truck">Rat-Truck</option>
+        <option value="RE-7B">RE-7B</option>
+        <option value="Reaper">Reaper</option>
+        <option value="Rebel">Rebel</option>
+        <option value="Rebla GTS">Rebla GTS</option>
+        <option value="Regina">Regina</option>
+        <option value="Remus">Remus</option>
+        <option value="Revolter">Revolter</option>
+        <option value="Rhapsody">Rhapsody</option>
+        <option value="Riata">Riata</option>
+        <option value="Rocoto">Rocoto</option>
+        <option value="Ruiner">Ruiner</option>
+        <option value="Rumpo">Rumpo</option>
+        <option value="Ruston">Ruston</option>
+        <option value="Rusty Rebel">Rusty Rebel</option>
+      </optgroup>
+
+      <optgroup label="S">
+        <option value="Sabre Turbo">Sabre Turbo</option>
+        <option value="Sandking SWB">Sandking SWB</option>
+        <option value="Sandking XL">Sandking XL</option>
+        <option value="SC-1">SC-1</option>
+        <option value="Schafter">Schafter</option>
+        <option value="Schafter LWB">Schafter LWB</option>
+        <option value="Schafter LWB (Armored)">Schafter LWB (Armored)</option>
+        <option value="Schafter V12">Schafter V12</option>
+        <option value="Schlagen GT">Schlagen GT</option>
+        <option value="Schwarzer">Schwarzer</option>
+        <option value="Seminole">Seminole</option>
+        <option value="Sentinel Classic">Sentinel Classic</option>
+        <option value="Sentinel XS">Sentinel XS</option>
+        <option value="Serrano">Serrano</option>
+        <option value="Seven-70">Seven-70</option>
+        <option value="Shelby GT500">Shelby GT500</option>
+        <option value="Slamvan">Slamvan</option>
+        <option value="Slamvan Custom">Slamvan Custom</option>
+        <option value="Specter">Specter</option>
+        <option value="Stafford">Stafford</option>
+        <option value="StafVapid">StafVapid</option>
+        <option value="Stalion">Stalion</option>
+        <option value="Stinger">Stinger</option>
+        <option value="Stinger GT">Stinger GT</option>
+        <option value="Stirling GT">Stirling GT</option>
+        <option value="Streiter">Streiter</option>
+        <option value="Stretch">Stretch</option>
+        <option value="Sultan">Sultan</option>
+        <option value="Sultan Classic">Sultan Classic</option>
+        <option value="Sultan RS">Sultan RS</option>
+        <option value="Sultan RS Classic">Sultan RS Classic</option>
+        <option value="Super Diamond">Super Diamond</option>
+        <option value="Surano">Surano</option>
+        <option value="Surge">Surge</option>
+        <option value="Swinger">Swinger</option>
+      </optgroup>
+
+      <optgroup label="T">
+        <option value="T-20">T-20</option>
+        <option value="Tailgater">Tailgater</option>
+        <option value="Tailgater S">Tailgater S</option>
+        <option value="Taipan">Taipan</option>
+        <option value="Tampa">Tampa</option>
+        <option value="Tempesta">Tempesta</option>
+        <option value="Tezeract">Tezeract</option>
+        <option value="Thrax">Thrax</option>
+        <option value="Tigon">Tigon</option>
+        <option value="Torero">Torero</option>
+        <option value="Toros">Toros</option>
+        <option value="Tropos Rallye">Tropos Rallye</option>
+        <option value="Truffade Chiron">Truffade Chiron</option>
+        <option value="Tulip">Tulip</option>
+        <option value="Turismo Classic">Turismo Classic</option>
+        <option value="Turismo R">Turismo R</option>
+        <option value="Tyrant">Tyrant</option>
+        <option value="Tyrus">Tyrus</option>
+      </optgroup>
+
+      <optgroup label="U">
+        <option value="Ubermacht 760 (LI)">Ubermacht 760 (LI)</option>
+        <option value="Ubermacht I8">Ubermacht I8</option>
+        <option value="Ubermacht M3 (E46)">Ubermacht M3 (E46)</option>
+        <option value="Ubermacht M3 (G80)">Ubermacht M3 (G80)</option>
+        <option value="Ubermacht M3 CS">Ubermacht M3 CS</option>
+        <option value="Ubermacht M4 (G82)">Ubermacht M4 (G82)</option>
+        <option value="Ubermacht M4 (GTS)">Ubermacht M4 (GTS)</option>
+        <option value="Ubermacht M5 (CS)">Ubermacht M5 (CS)</option>
+        <option value="Ubermacht M5 (E34)">Ubermacht M5 (E34)</option>
+        <option value="Ubermacht M5 (E60)">Ubermacht M5 (E60)</option>
+        <option value="Ubermacht M5 (F90)">Ubermacht M5 (F90)</option>
+        <option value="Ubermacht M8 (F91)">Ubermacht M8 (F91)</option>
+        <option value="Ubermacht X5 (E70)">Ubermacht X5 (E70)</option>
+        <option value="Ubermacht X5 (G05)">Ubermacht X5 (G05)</option>
+        <option value="Ubermacht X5-M (F95)">Ubermacht X5-M (F95)</option>
+        <option value="Ubermacht X6-M (E71)">Ubermacht X6-M (E71)</option>
+        <option value="Ubermacht X6-M 2021">Ubermacht X6-M 2021</option>
+        <option value="Ubermacht X7 (G07)">Ubermacht X7 (G07)</option>
+      </optgroup>
+
+      <optgroup label="V">
+        <option value="V-STR">V-STR</option>
+        <option value="Vacca">Vacca</option>
+        <option value="Vagner">Vagner</option>
+        <option value="Vamos">Vamos</option>
+        <option value="Vapid Mustang GT500">Vapid Mustang GT500</option>
+        <option value="Vapid Raptor (F150)">Vapid Raptor (F150)</option>
+        <option value="Vectre">Vectre</option>
+        <option value="Velierer">Velierer</option>
+        <option value="Vigero">Vigero</option>
+        <option value="Virgo">Virgo</option>
+        <option value="Virgo Classic">Virgo Classic</option>
+        <option value="Visione">Visione</option>
+        <option value="Voltic">Voltic</option>
+        <option value="Voodoo">Voodoo</option>
+        <option value="Voodoo Custom">Voodoo Custom</option>
+      </optgroup>
+
+      <optgroup label="W">
+        <option value="Warrener">Warrener</option>
+        <option value="Warrener HKR">Warrener HKR</option>
+        <option value="Washington">Washington</option>
+        <option value="Windsor">Windsor</option>
+        <option value="Windsor Drop">Windsor Drop</option>
+      </optgroup>
+
+      <optgroup label="Y">
+        <option value="Yosemite">Yosemite</option>
+        <option value="Yosemite Rancher">Yosemite Rancher</option>
+      </optgroup>
+
+      <optgroup label="Z">
+        <option value="Z-Type">Z-Type</option>
+        <option value="Zentorno">Zentorno</option>
+        <option value="Zion">Zion</option>
+        <option value="Zion Cabrio">Zion Cabrio</option>
+        <option value="Zion Classic">Zion Classic</option>
+        <option value="Zorrusso">Zorrusso</option>
+      </optgroup>
+
+      <optgroup label="*">
+        <option value="9F">9F</option>
+        <option value="9F Cabrio">9F Cabrio</option>
+      </optgroup>
+
+      <optgroup label="Bikes">
+        <option>Akuma</option>
+        <option>Apocalypse Deathbike</option>
+        <option>Avarus</option>
+        <option>Bagger</option>
+        <option>Bati 801</option>
+        <option>Bati 801RR</option>
+        <option>BF-400</option>
+        <option>Blazer</option>
+        <option>Blazer Lifeguard</option>
+        <option>BMX</option>
+        <option>Carbon RS</option>
+        <option>Chimera</option>
+        <option>Cliffhanger</option>
+        <option>Cruiser</option>
+        <option>Daemon</option>
+        <option>Defiler</option>
+        <option>Diabolus</option>
+        <option>Diabolus Custom</option>
+        <option>Double-T</option>
+        <option>Enduro</option>
+        <option>Esskey</option>
+        <option>Faggio</option>
+        <option>FCR 1000</option>
+        <option>FCR 1000 Custom</option>
+        <option>Future Shock Deathbike</option>
+        <option>Gargoyle</option>
+        <option>Hakuchou</option>
+        <option>Hakuchou Drag</option>
+        <option>Hexer</option>
+        <option>Innovation</option>
+        <option>Lectro</option>
+        <option>Manchez</option>
+        <option>Nemesis</option>
+        <option>Nightblade</option>
+        <option>PCJ-600</option>
+        <option>Rat Bike</option>
+        <option>Ruffian</option>
+        <option>Sanchez</option>
+        <option>Sanctus</option>
+        <option>Shotaro</option>
+        <option>Sovereign</option>
+        <option>Street Blazer</option>
+        <option>Thrust</option>
+        <option>Tri-Cycles Race Bike</option>
+        <option>Vader</option>
+        <option>Vindicator</option>
+        <option>Vortex</option>
+        <option>Whippet Race Bike</option>
+        <option>Wolfsbane</option>
+        <option>Zombie Chopper</option>
+      </optgroup>
+    </select>
+
+
+
+
+
+        <select id="Others">
+      <option value="">Others</option>
+      <optgroup label="Bikes">
+        <option>Akuma</option>
+        <option>Apocalypse Deathbike</option>
+        <option>Avarus</option>
+        <option>Bagger</option>
+        <option>Bati 801</option>
+        <option>Bati 801RR</option>
+        <option>BF-400</option>
+        <option>Blazer</option>
+        <option>Blazer Lifeguard</option>
+        <option>BMX</option>
+        <option>Carbon RS</option>
+        <option>Chimera</option>
+        <option>Cliffhanger</option>
+        <option>Cruiser</option>
+        <option>Daemon</option>
+        <option>Defiler</option>
+        <option>Diabolus</option>
+        <option>Diabolus Custom</option>
+        <option>Double-T</option>
+        <option>Enduro</option>
+        <option>Esskey</option>
+        <option>Faggio</option>
+        <option>FCR 1000</option>
+        <option>FCR 1000 Custom</option>
+        <option>Future Shock Deathbike</option>
+        <option>Gargoyle</option>
+        <option>Hakuchou</option>
+        <option>Hakuchou Drag</option>
+        <option>Hexer</option>
+        <option>Innovation</option>
+        <option>Lectro</option>
+        <option>Manchez</option>
+        <option>Nemesis</option>
+        <option>Nightblade</option>
+        <option>PCJ-600</option>
+        <option>Rat Bike</option>
+        <option>Ruffian</option>
+        <option>Sanchez</option>
+        <option>Sanctus</option>
+        <option>Shotaro</option>
+        <option>Sovereign</option>
+        <option>Street Blazer</option>
+        <option>Thrust</option>
+        <option>Tri-Cycles Race Bike</option>
+        <option>Vader</option>
+        <option>Vindicator</option>
+        <option>Vortex</option>
+        <option>Whippet Race Bike</option>
+        <option>Wolfsbane</option>
+        <option>Zombie Chopper</option>
+      </optgroup>
+
+      <optgroup label="HeliCopters">
+        <option>Buzzard</option>
+        <option>Frogger</option>
+        <option>Maverick</option>
+        <option>Sparrow</option>
+        <option>SuperVolito Carbon</option>
+        <option>Swift Deluxe</option>
+        <option>Volatus</option>
+      </optgroup>
+
+
+      <optgroup label="Planes">
+        <option>Alpha-Z1</option>
+        <option>Cuban 800</option>
+        <option>Dodo</option>
+        <option>Duster</option>
+        <option>Howard NX-25</option>
+        <option>Luxor</option>
+        <option>Luxor Deluxe</option>
+        <option>Malard</option>
+        <option>Mammatus</option>
+        <option>Microlight</option>
+        <option>Nimbus</option>
+        <option>P-45 Nokota</option>
+        <option>V-65 Molotok</option>
+        <option>Velum</option>
+      </optgroup>
+
+      <optgroup label="Boats">
+        <option>Dinghy</option>
+        <option>Dinghy (2-Seater)</option>
+        <option>Dinghy (Yacht)</option>
+        <option>Jetmax</option>
+        <option>Marquis</option>
+        <option>SeaShark</option>
+        <option>Speeder</option>
+        <option>Squalo</option>
+        <option>Suntrap</option>
+        <option>Toro</option>
+        <option>Tropic</option>
+      </optgroup>
+    </select>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div id="formFields">
+        <input type="text" id="price" placeholder="Price | Budget">
+
+        <div class="row">
+            <label><input type="checkbox" name="action" value="Buying"> Buying</label>
+            <label><input type="checkbox" name="action" value="Selling" checked> Selling</label>
+            <label><input type="checkbox" name="action" value="Trading"> Trading</label>
+            <label><input type="checkbox" name="action" value="Selling or trading"> Selling/Trading</label>
+        </div>
+
+        <div class="row">
+            <label><input type="checkbox" name="config" value="in full configuration"> Full Configuration</label>
+            <label><input type="checkbox" name="config" value="in partial configuration"> Partial Configuration</label>
+        </div>
+
+        <div class="row">
+            <label><input type="checkbox" id="visual"> Visual Upgrades</label>
+            <label><input type="checkbox" id="insurance"> Insurance</label>
+            <label><input type="checkbox" id="tuning"> Tuning Parts</label>
+            <label><input type="checkbox" id="turbo"> Turbo Kit</label>
+            <label><input type="checkbox" id="drift"> Drift Kit</label>
+        </div>
+
+        <div class="button-container">
+            <button class="copy-btn" onclick="copyAd()">Copy AD</button>
+            <button class="copy-btn" onclick="clearAll()">Clear All</button>
+        </div>
+
+        <div class="output" id="output">Your formatted AD will appear here.</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="vehicle-script.js"></script>
+</body>
+
+</html>
